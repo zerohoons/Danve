@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+body{
+background-color:  rgb(156,218,186);
+}
+.title01{
+	borders : 5px solid white;
+	background-color : white;
+	width : 528px;
+	height : 500px;
+	margin : 0px auto;
+	padding: 15px 25px;
+}
+.video{
+	border: 5px solid white;
+	background-color : rgb(156,218,186);
+	width: 568px;
+	height: auto;
+	align-content: center;
+	margin: auto;
+}
+
+#maintitle{
+	text-decoration: border;
+	text-align: center;
+	text-shadow: green;
+}
+#subtitle{
+	text-align: left;
+	
+}
+
+#video1,#video2{
+	padding: 20px 20px ;
+	list-style: none;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="title.css" type="text/css">
+	<style>
+		body {
+			background-color: white;
+		}
+
+		.display {
+			width: 50%;
+			height: auto;
+			margin: 0px 25% 25%;
+			position: absolute;
+			z-index: 2;
+			overflow: hidden;
+		}
+
+		.title01 {
+			border: 5px solid rgb(156, 218, 186);
+			width: 97%;
+			height: auto;
+			padding: 0px;
+			margin: 10px auto;
+		}
+
+		.video {
+			display: inline-block;
+			margin: 10px 0px 0px 0px;
+			padding: 0px;
+			background-color: rgb(156, 218, 186);
+			width: 100%;
+			height: auto;
+			border: 0px;
+		}
+
+		#maintitle {
+			font-weight: bold;
+			text-align: center;
+			text-shadow: green;
+		}
+
+		#subtitle {
+			font-style: italic;
+			margin-left: 5%;
+			text-align: left;
+
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0%;
+		}
+
+		ul>li,
+		p {
+			margin: 10px 5% 5%;
+		}
+
+		#video1,#video2 {
+			width: 90%;
+			height: 250px;
+			padding: 0%;
+			margin: 10px 5%  0px 5%;
+			background-color: gray;
+		}
+
+		.comment{
+			z-index: 1;
+			width: 100%;
+			border: 5px solid #7d7d7d;
+			background-color: #7d7d7d;
+			padding: 0px;
+			margin: 0px auto;
+			overflow: hidden;
+		}
+
+		.comment >ul >li{
+			margin: 1.2em auto;
+			color: #8a35ba;
+			font-size: 25px;
+			overflow: hidden;
+			list-style-type: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="display">
+
+		<!-- 전시 최상단 타이틀 -->
+		<div class="title01">
+			<h1 id="maintitle"> 전시 제목 입력란 </h1>
+			<br>
+			<br>
+			<br>
+			<h2 id="subtitle"> 전시 이름</h2>
+			<p> 전시소개글이 입력되는 자리입니다. 전시소개글이 입력되는 자리입니다.
+				전시소개글이 입력되는 자리입니다. 전시소개글이 입력되는 자리입니다.
+				전시소개글이 입력되는 자리입니다.</p>
+		</div>
+
+		<!--  전시 영상 들어가는 공간. -->
+		<div class="video">
+			<ul style="text-align: right;">
+				<li style="font-size: 1.5em; font-style: oblique; font: bolder;">다큐멘터리시험 준비과정 영상이 들어갑니다.</li>
+				<p>그에 대한 설명이 이곳에 들어갑니다.그에 대한 설명이 이곳에 들어갑니다.그에 대한 설명이 이곳에 들어갑니다.그에 대한 설명이 이곳에 들어갑니다.에 대한 설명이 이곳에
+					들어갑니다.</p>
+				<li id="video1"> video </li>
+			</ul>
+			<ul style="text-align: left;">
+				<li style="font-size: 1.5em; font-style: oblique; font: bolder;">촬영된 다큐멘터리 영상이 들어갑니다.</li>
+				<p>그에 대한 설명이 이곳에 들어갑니다.그에 대한 설명이 이곳에 들어갑니다.그에 대한 설명이 이곳에 들어갑니다.그에 대한 설명이 이곳에 들어갑니다.에 대한 설명이 이곳에
+					들어갑니다.</p>
+				<li id="video2"> video </li>
+			</ul>
+		</div>
+		<!--참여자 대표 후기-->
+		<div class="comment">
+			<br><br>
+			<ul>	
+				<li style="margin: 0px auto; text-align: left;" >인상적인 후기글이 적힙니다.</li>
+				<li style="text-align: right;">인상적인 후기글이 적힙니다.</li>
+				<li style="text-align: center;">인상적인 후기글이 적힙니다.</li>
+				<li>인상적인 후기글이 적힙니다.</li>
+				<li>인상적인 후기글이 적힙니다.</li>
+				<li>인상적인 후기글이 적힙니다.</li>
+				<li style="margin-bottom: 0px;">인상적인 후기글이 적힙니다.</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
