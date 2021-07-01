@@ -6,11 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<script type="text/javascript" src="https//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="title.css" type="text/css">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap');
 		body {
-			background-color: white;
+			/* background-color: white; */
+			background-image: linear-gradient(180deg,#8a35ba 100px, #7d7d7d 500px,rgb(156,218,186) 2200px, 
+			white 3800px);
+			/* background-image: linear-gradient(180deg,#7d7d7d 20%, #8a35ba); */
+			height: 3800px;
 		}
 
 		.display {
@@ -24,21 +30,24 @@
 		}
 
 		.title01 {
-			border: 5px solid rgb(156, 218, 186);
-			width: 97%;
-			height: auto;
+			width: 100%;
+			height: 380px;
 			padding: 0px;
 			margin: 10px auto;
+			background-color:rgba(156, 218, 186, 0);
 		}
 
 		.video {
 			display: inline-block;
 			margin: 10px 0px 0px 0px;
 			padding: 0px;
-			background-color: rgb(156, 218, 186);
+			/* background-image: linear-gradient(180deg,white, rgb(156,218,186)10%,#7d7d7d); */
+			/* background-color: rgb(156, 218, 186); */
+			background-color: rgba(156, 218, 186, 0);
 			width: 100%;
-			height: auto;
+			height: 980px;
 			border: 0px;
+			
 		}
 
 		#maintitle {
@@ -76,11 +85,12 @@
 			font-family: 'Noto Sans KR', sans-serif;
 			z-index: 1;
 			width: 100%;
-			background-image: linear-gradient(3deg,#7d7d7d, rgb(156, 218, 186));
+			height: 500px;
+			/* background-image: linear-gradient(180deg,#7d7d7d 60%, rgb(156, 218, 186)); */
 			background-clip: text;
 			padding: 0px;
 			margin: 0px auto;
-			overflow: hidden;
+			overflow: hidden !important;
 			table-layout: fi;
 			
 		}
@@ -92,12 +102,25 @@
 			color: #8a35ba;
 			list-style-type: none;
 			width: 100%;
-			overflow: hidden;
 			white-space: nowrap;
+			overflow: hidden;
 			display: inline-block;
 		}
 		.comm01:hover{
 			text-shadow: 2px 2px #7d7d7d;
+		}
+		.comm02:hover{
+			text-shadow: 2px 2px #8a35ba;
+		}
+		#motto{
+			width: 100%;
+			height: 250px;
+			text-align: center;
+			margin: 150px auto;
+		}
+		#motto > h1{
+			margin: 250px auto;
+			text-align: center;
 		}
 	</style>
 </head>
@@ -138,21 +161,69 @@
 			<div id="comments">	
 				<p class="comm01" style="margin: 0px auto 0px 15px; left: 285px; font-size: 35px;">
 					인상적인 후기글이 적힙니다.</p>
-				<p class="comm01" style="writing-mode: vertical-lr; position: absolute;  font-size: 45px;">
+				<p class="comm01" style="writing-mode: vertical-lr; width: 20%;  font-size: 45px; 
+				 height: 15%; position: absolute;;">
 					인상적인 후기글이 적힙니다.</p>
 				<p class="comm01" style="text-align: right;  font-size: 25px;">
 					인상적인 후기글이 적힙니다.</p>
-				<p class="comm02" style="writing-mode: vertical-rl; margin-top: 100px; position: absolute; margin-right: 35px;  font-size: 50px;">
+				<p class="comm02" style="writing-mode: vertical-rl; width: 20%; right: -10%; margin-top: 100px;
+				position: absolute; margin-right: 35px;  font-size: 50px; height: 10%;">
 					인상적인 후기글이 적힙니다.</p>
-				<p class="comm02" style="text-align: right;  font-size: 35px; margin-top: 0px;">
+				<p class="comm02" style="width: 80%; float: right; font-size: 35px; margin: 0px auto; ">
 					인상적인 후기글이 적힙니다.</p>
 				<p class="comm02" style="text-align: center;  font-size: 25px;">
 					인상적인 후기글이 적힙니다.</p>
-				<p  class="comm02" style="text-align: left; margin-left: 75px; margin-bottom: 65px;  font-size: 35px;">
+				<p  class="comm02" style="text-align: left;  width: 65%; margin-left: 75px; margin-bottom: 65px;  font-size: 35px;">
 					인상적인 후기글이 적힙니다.</p>
+			</div>
+		</div>
+		<br>
+		<!-- 슬로건 문구 -->
+		<div id="motto">
+			<h1>슬로건 문구들어가기</h1>
+		</div>
+		<!-- 실험당시 사진 이미지. -->
+		<div class="s-box">
+			<div class="slider-for">
+				
+				<div><img src="../images/1.jpg" alt=""></div>
+				<div><img src="../images/2.jpg" alt=""></div>
+				<div><img src="../images/3.jpg" alt=""></div>
+				<div><img src="../images/4.jpg" alt=""></div>
+				<div><img src="../images/5.jpg" alt=""></div>
+				<div><img src="../images/6.jpg" alt=""></div>
+				<div><img src="../images/7.jpg" alt=""></div>
+				<div><img src="../images/8.jpg" alt=""></div>
+			</div>
+			<div class="slider-nav">
+				<div><img src="nav_1" alt=""></div>
+				<div><img src="nav_2" alt=""></div>
+				<div><img src="nav_3" alt=""></div>
+				<div><img src="nav_4" alt=""></div>
+				<div><img src="nav_5" alt=""></div>
+				<div><img src="nav_6" alt=""></div>
+				<div><img src="nav_7" alt=""></div>
+				<div><img src="nav_8" alt=""></div>
 			</div>
 		</div>
 	</div>
 </body>
-
+<script type = "text/javascript">
+	$(document).ready(function () {
+		$('.image-for').slick({
+			autoplay: true,
+			slideToShow: 1,
+			slideToScroll: 1,
+			arrows: true,
+			fade:false,
+			asNavFor: '.image-nav'
+		});
+		$('.image-nav').slick({
+			slidesToShow: 5,
+			slideToScroll:1,
+			asNavFor:'.slide-for',
+			focusOnSelect:true,
+		});
+	})
+</script>
 </html>
