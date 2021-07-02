@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      .menubar {
+          border-top: 1px solid rgb(156, 218, 186);
+        border-bottom: 1px solid rgb(156, 218, 186);
+        margin-bottom: 0%;
+        height: 10px;
+     }
+    #danve{
+        background-color: white;
+        color: rgb(156, 218, 186);
+    }
+    #danve:hover {
+        background-color: white;
+        color: rgb(156, 218, 186);
+    }
+    .intromenu{
+        margin: 0px auto;
+        position: inherit;
+        width: 70%;
+    }
+    .danveSub{
+        padding-left: 100px;
+        margin: 0px auto;
+        list-style: none;
+        text-align: left;
+    }
+    .danveSub>li{
+        float: left;
+        padding: 0px;
+        margin: 0%;
+    }
+
+    .danveSub >li >div{
+        border: 2px solid rgb(156, 218, 186);
+        background-color: rgb(156, 218, 186);
+        display: inline-block;
+        margin-right: 0;
+        padding: 15px 25px;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .danveSub >li >div:hover{
+        background-color: white;
+        color: rgb(156, 218, 186);
+    }
+    .content {
+        margin: 0px auto;
+        width: 100%;
+    }
+</style>
+<body>
+    <link rel="import" href="topBanner.html">
+    <div class="intromenu">
+        <!-- 상단 메뉴 -->
+        <div>
+            <ul class="danveSub">
+                <li><div style=" width: 77px;" onclick="navClick('intro_danve.html')" id="dv1">단비소개</div></li>
+                <li><div onclick="navClick('intro_person.html')" id="dv2">구성원소개</div></li>
+            </ul>
+        </div>
+        <!-- 정보나오는 창 -->
+        <div class="introduceD" >
+
+        </div>
+    </div>
+</body>
+<script>
+
+    function navClick(loadUrl) {
+        $(".introduceD").load(loadUrl);
+    }
+    </script>
+</html>

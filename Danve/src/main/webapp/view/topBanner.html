@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.1/fullpage.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.1/fullpage.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    #deco{
+        width: 100%;
+        height: 143px;
+        background: rgb(156, 218, 186);
+        margin: 0%;
+        position: inherit;
+    }
+    .display {
+        margin: 100px auto;
+        width: 60%;
+        top: 0;
+        height: 40px;
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+
+    .menubar {
+        width: 74%;
+        float: left;
+        list-style: none;
+        text-decoration: none;
+        border-top: 1px solid white;
+        margin: 0px;
+        text-align: left;
+        padding: 0px;
+        color: #7d7d7d;
+    }
+    .mainMenu{
+        margin: 0%;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .mainMenu>li {
+        display: inline;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .menubar>ul>li>div {
+        height: 30px;
+        line-height: 30px;
+        cursor: pointer;
+        width: 22%;
+        text-align: center;
+        display: inline-block;
+        margin: 0%;
+        padding: 1%;
+    }
+
+    #danve:hover {
+        background-color: rgb(156, 218, 186);
+        color: white;
+    }
+    #docu:hover {
+        background-color: #7d7d7d;
+        color: white;
+    }
+
+    .howto {
+        width: 20%;
+        text-decoration: none;
+        text-align: center;
+        list-style: none;
+        float: right;
+    }
+
+    .howto>li {
+        display: inline-block;
+        color: #7d7d7d;
+        line-height:inherit;
+        padding: 0px 5px 0px 5px;
+    }
+
+    .content {
+        margin: 0px auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .bottom_menu{
+        bottom: 0;
+        position: fixed;
+        min-width: 100%;
+        text-align: center;
+        height: 80px;
+    
+        background-color: rgb(156, 218, 186);
+        width: 100%;
+    }
+
+    .nav_button{
+        float: right;
+        margin: 20px auto;
+        margin-right: 200px;
+    }
+    .nav_button > a{
+        display: inline-block;
+        width: 25px;
+        font-size: 25px;
+        line-height: 20px;
+        height: 25px;
+        border: 1px solid #7d7d7d;
+        margin: 0px;
+        padding: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- 데코용 박스 -->
+    <div id ="deco">
+
+        <div class="display">
+            <nav class="menubar">
+                <ul class="mainMenu">
+                    <li><div id="danve" onclick="navClick('introduce.html')">단비프로젝트</div></li>
+                    <li><div id="docu" onclick="navClick('docu_main.html')" >다큐멘터리실험</div></li>
+                    <li><div id="goVe" style="margin-left: -4%;">비건다짐</div></li>
+                    <li><div id="share" style="margin-left : -9%; margin-right: 10%;">공유하기</div></li>
+                </ul>
+            </nav>
+            <ul class="howto" ">
+                <li>로그인</li>
+                <li>회원가입</li>
+            </ul>
+        </div>
+        
+        <div class="content">
+        </div>
+    <script>
+      function navClick(loadUrl) {
+
+            $(".content").load(loadUrl);
+            
+          }
+    </script>
+
+        <!-- 하단 고정 메뉴 -->
+        <div class="bottom_menu">
+            <div style="float: left; margin-left: 550px;"> <h5 style="text-align: center;">타이틀이적히는 자리</h5></div>
+            <div class="nav_button">
+                <!-- Previous link sticks to the left -->
+                <a><</a>
+            
+                <!-- Next link sticks to the right -->
+                <a>></a>
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

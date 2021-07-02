@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #deco{
+        background: #7d7d7d;
+    }
+    .menubar {
+        border-top: 1px solid rgb(156, 218, 186);
+        color: white;
+    }
+      .menubar {
+        margin-bottom: 0%;
+        height: 10px;
+     }
+    #docu{
+        background-color: #7d7d7d;
+        color: rgb(156, 218, 186);
+    }
+    #docu:hover {
+        background-color: white;
+        color: #7d7d7d;
+    }
+    .intromenu{
+        margin: 0px auto;
+        position: inherit;
+        width: 70%;
+    }
+    .Sub{
+        padding-left: 100px;
+        margin: 0px auto;
+        list-style: none;
+        text-align: left;
+    }
+    .Sub>li{
+        float: left;
+        padding: 0px;
+        margin: 0%;
+    }
+
+    .Sub >li >div{
+        border: 2px solid rgb(156, 218, 186);
+        background-color: #7d7d7d;
+        display: inline-block;
+        margin-right: 0;
+        padding: 15px 25px;
+        color: rgb(156, 218, 186);
+        text-align: center;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .Sub >li >div:hover{
+        background-color: rgb(156, 218, 186);
+        color: #7d7d7d;
+    }
+    .content {
+        margin: 0px auto;
+        width: 100%;
+    }
+    .bottom_menu{
+        background-color: #7d7d7d;
+    }
+</style>
+<body>
+    <link rel="import" href="topBanner.html">
+    <div class="intromenu">
+        <!-- 상단 메뉴 -->
+        <div>
+            <ul class="Sub">
+                <li><div style=" width: 77px;" onclick="navClick('whatTest.html')" id="te1">실험개요</div></li>
+                <li><div onclick="navClick('testTable.html')" id="te2">실험계획표</div></li>
+                <li><div onclick="navClick('testVedio.html')" id="te3">실험영상</div></li>
+                <li><div onclick="navClick('testComment.html')" id="dv2">실험참가소감</div></li>
+                <li><div onclick="navClick('testPicts.html')" id="dv2">실험사진</div></li>
+                <li><div onclick="navClick('onlinComment.html')" id="dv2">온라인전시후기</div></li>
+
+            </ul>
+        </div>
+        <!-- 정보나오는 창 -->
+        <div class="introduceD" >
+
+        </div>
+    </div>
+</body>
+<script>
+
+    function navClick(loadUrl) {
+        $(".introduceD").load(loadUrl);
+    }
+    </script>
+</html>
