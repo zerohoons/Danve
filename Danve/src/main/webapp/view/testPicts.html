@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #te5 {
+            background-color: rgb(156, 218, 186);
+            color: #7d7d7d;
+        }
+        .howto >li{
+            color: white;
+        }
+        .mainIntro {
+            display: flex;
+            width: 80%;
+            height: auto;
+            position: relative;
+        }
+
+        .introDanve {
+            text-align: left;
+            position: relative;
+            box-sizing: border-box;
+            display: inline;
+            margin: 0px auto;
+            right: 180px;
+        }
+
+        .content {
+            box-sizing: border-box;
+ 
+        }
+
+        .wrapper{
+            width: 60%;
+            height: 80vh;
+            overflow: hidden;
+            margin: 5% auto;
+        }
+
+        #banner img{
+            height: 400px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        #thumb img{
+            float: left;
+            border: 2px solid #fff;
+            height: 100px;
+            width: 20%;
+            opacity: .6;
+        }
+
+        #thumb img:hover{
+            float: left;
+            border: 2px solid #fff;
+            height: 100px;
+            width: 20%;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="wrapper">
+        <div id="banner">
+           <img src="../images/1.jpg" alt="">
+        </div>
+        <div id="thumb">
+            <img src="../images/1.jpg" alt="">
+            <img src="../images/2.jpg" alt="">
+            <img src="../images/3.jpg" alt="">
+            <img src="../images/4.jpg" alt="">
+            <img src="../images/5.jpg" alt="">
+            <img src="../images/6.jpg" alt="">
+            <img src="../images/7.jpg" alt="">
+            <img src="../images/8.jpg" alt="">
+        </div>
+   </div>
+</body>
+<script>
+    var bannerImg = document.getElementById('banner');
+    var thumbImg = document.getElementById('thumb').getElementsByTagName('img');
+
+    for(var i = 0; i< thumbImg.length; i++){
+        thumbImg[i].addEventListener('click',box);
+    }
+
+    function box(){
+        var imgSrc = this.getAttribute('src');
+        bannerImg.innerHTML="<img src="+imgSrc+">";
+    }
+</script>
+</html>
