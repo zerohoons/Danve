@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <style>
+    ul li {
+      list-style: none;
+    }
+
+    fieldset {
+      border: none;
+    }
+
+    legend {
+      display: none;
+    }
+
+    body {
+      padding: 50px;
+    }
+    form{
+      margin: 50px auto;
+      border: 1px solid gray;
+      width: 430px;
+      align-items: center;
+    }
+    .login .top{
+      position: relative;
+      width: 323px;
+    }
+    .login .top li label{
+      font-size: 13px;
+      color: #464646;
+      font-weight: bold;
+      display: inline-block;
+      width: 65px;
+    }
+  .login .top input[type="text"],
+  .login .top input[type="password"]{
+    width: 140px;
+    height: 25px;
+    padding: 0px;
+    border: 1px solid #d9d9d9;
+  }
+  .login .top li {
+    margin-bottom: 9px;
+  }
+.login .top li a{
+  width: 109px;
+  height: 61px;
+  background: olive;
+  display: block; 
+  text-decoration: none;
+  color: white;
+  line-height: 61px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid olivedrab;
+}
+.login .top li.btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.login .top li.save{
+  padding: 0 0 0 65px;
+}
+.login .top li.save label{
+  font-weight: normal;
+  margin-left: 10px;
+  width: auto;
+}
+
+.login .bottom{
+  padding: 13px 0 0 60px;
+  font-size: 13px;
+  margin-left: 30px;
+}
+
+.login .bottom li{
+  color: #383d41;
+  padding: 0 0 0 9px;
+  list-style: circle;
+  line-height: 23px;
+}
+
+.login .bottom li a{
+  font-weight: bold;
+  margin:  0 0 0 20px;
+  color: olive;
+  text-decoration: underline;
+}
+.login .top li #kakao_login{
+  width: 256px;
+  height: 30px;
+  background: khaki;
+  display: block; 
+  text-decoration: none;
+  color: black;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 1.5px;
+  font-size: 12px;
+  border: 1px solid khaki;
+}
+  </style>
+</head>
+
+<body>
+  <form action="" method="POST">
+    <fieldset>
+      <legend>로그인</legend>
+      <div class="login">
+
+        <ul class="top">
+          <li><label for="txt1"> 아이디 </label><input type="text" name="" id="txt1"></li>
+          <li><label for="txt2"> 비밀번호 </label><input type="password" name="" id="txt2"></li>
+          <li class="btn"><a href="#a">로그인</a></li>
+          <!-- <li class="save"><input type="checkbox" name="" id="chk1"><label for="chk1"> 아이디 저장 </label></li> -->
+          <li class="save"><a href="#a" id="kakao_login">카카오로 로그인하기</a></li>
+        </ul>
+        <ul class="bottom">
+          <li>아이디를 잊으셨나요?<a href="#a">아이디 찾기</a></li>
+          <li>비밀번호를 잊으셨나요?<a href="#a">비밀번호 찾기</a></li>
+        </ul>
+
+      </div>
+
+    </fieldset>
+  </form>
+</body>
+
+</html>

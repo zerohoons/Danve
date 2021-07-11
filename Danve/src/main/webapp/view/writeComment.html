@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>후기 작성</title>
+</head>
+<style>
+  fieldset{
+    border: 3px dotted green;
+    margin: 30px auto;
+    width: 250px;
+    height: auto;
+    text-align: left;
+    padding: 20px 30px;
+  }
+
+  fieldset div li{
+    list-style: none;
+    margin-top: 10px;
+    width: 150px;
+  }
+  input[type="text"]{
+    width: 240px;
+  }
+  textarea{
+    width: 240px;
+  }
+  input[type="submit"]{
+    float: right;
+    font-size: 13px;
+    background: inherit;
+    
+
+  }
+</style>
+<body>
+  <fieldset>
+    <form action="" method="post">
+
+      <div class="com_title">
+        <li>제목</li>
+        <li><input type="text" name="title" id="" placeholder="제목을 입력해주세요."></li>
+      </div>
+      <div class="com_text">
+        <li>소감</li>
+        <li><textarea name="" id="" cols="10" rows="10" placeholder="소감을 입력해주세요. 100자 내로 입력 가능합니다."></textarea></li>
+      </div>
+      
+      <input type="submit" value="저장하기" name="저장하기" id="com_write_btn">
+     </form>
+  </fieldset>
+</body>
+</html>

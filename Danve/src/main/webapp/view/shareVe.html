@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #deco {
+    background: white;
+    border: 1px solid #8a35ba;
+  }
+
+  .howto>li {
+    color: #8a35ba;
+  }
+
+  .menubar {
+    border-top: white;
+    color: gray;
+  }
+
+  .menubar {
+    margin-bottom: 0%;
+    height: 10px;
+  }
+
+  #goVe {
+    background-color: none;
+    color: #8a35ba;
+  }
+
+  #goVe:hover {
+    color: #8a35ba;
+    font-weight: bold;
+  }
+
+
+  .veMenu {
+    margin: 0% auto;
+    align-items: center;
+    display: block;
+    margin-left: 80px;
+  }
+
+  .veMenu ul {
+    margin: 0%;
+    width: 400px;
+    padding: 0%;
+    text-align: center;
+
+  }
+
+  .veMenu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0%;
+    margin: 0%;
+    border: 2px solid #8a35ba;
+    border-top: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+  }
+
+  .veMenu ul li input[type="button"] {
+    background-color: white;
+    border: 0px;
+    font-size: 15px;
+    margin: 0%;
+  }
+
+  .veMenu ul li input[type="button"]:hover {
+    color: #8a35ba;
+    background: white;
+  }
+
+  .shareVe{
+
+    width: 600px;
+    height: 650px;
+    padding: 10px auto;
+    margin-left: 60px;
+  }
+
+  .shareVe table{
+    margin: 50px auto;    
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 450px;
+    height: 350px;
+    text-align: center;
+  }
+
+  .shareVe table thead tr,
+  .shareVe table thead tr th,
+  .shareVe table tbody tr,
+  .shareVe table tbody tr td{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+  
+  .shareVe .img{
+    margin: 0 80px;
+    position: relative;
+    width: 150px;
+    height: 250px;
+    background-color: aquamarine;
+  }
+
+  .shareVe .btn li{
+    list-style: none;
+    position: relative;
+    left: 50px;
+    bottom: 100px;
+  }
+  .shareVe .btn li input[type="button"]{
+background-color: #8a35ba;
+height: 25px;
+margin: 5px auto;
+padding: auto;
+width: 150px;
+color: white;
+border: none;
+  }
+</style>
+
+<body>
+  <div class="veMenu">
+    <ul>
+      <li><input type="button" value="비건다짐이란?" onclick="navclick(goVe.html)"></li>
+      <li><input type="button" value="다짐하기" onclick="navClick('doVe.html')"></li>
+      <li><input type="button" value="다짐자랑하기" onclick="navClick('shareVe.html')"></li>
+      <li><input type="button" value="다른다짐보기" onclick="navClick('showVe.html')"></li>
+    </ul>
+  </div>
+
+  <div class="shareVe">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">내가 한 다짐들</th>
+        </tr>
+        <tr>
+          <td style="width: 40%;">No</td>
+          <td style="width: 60%;">다짐내용</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>다짐 내용에서 10가 잘려서 보여집니다</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="img">이미지 미리보기 입니다.</div>
+    <ul class="btn">
+      <li>
+        <input type="button" value="저장하기">
+      </li>
+      <li>
+        <input type="button" value="공유하기">
+      </li>
+    </ul>
+  </div>
+</body>
+<script>
+  function navClick(loadUrl) {
+    $(".content").load(loadUrl);
+  }
+</script>
+
+</html>

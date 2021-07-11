@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #deco {
+      background: white;
+      border: 1px solid #8a35ba;
+    }
+
+    .howto>li {
+      color: #8a35ba;
+    }
+
+    .menubar {
+      border-top: white;
+      color: gray;
+    }
+
+    .menubar {
+      margin-bottom: 0%;
+      height: 10px;
+    }
+
+    #goVe {
+      background-color: none;
+      color: #8a35ba;
+    }
+
+    #goVe:hover {
+      color: #8a35ba;
+      font-weight: bold;
+    }
+
+
+    .veMenu {
+      margin: 0% auto;
+      align-items: center;
+      display: block;
+      margin-left: 80px;
+    }
+
+    .veMenu ul {
+      margin: 0%;
+      width: 400px;
+      padding: 0%;
+      text-align: center;
+
+    }
+
+    .veMenu ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 0%;
+      margin: 0%;
+      border: 2px solid #8a35ba;
+      border-top: none;
+      height: 50px;
+      line-height: 50px;
+      background-color: white;
+    }
+
+    .veMenu ul li input[type="button"] {
+      background-color: white;
+      border: 0px;
+      font-size: 15px;
+      margin: 0%;
+    }
+
+    .veMenu ul li input[type="button"]:hover {
+      color: #8a35ba;
+      background: white;
+    }
+
+    .veContent {
+      float: right;
+      width: 800px;
+      text-align: right;
+    }
+
+    .veContent ul li {
+      list-style: none;
+      margin: 10px;
+      display: block;
+    }
+
+    .veContent ul li div {
+      width: 70%;
+      border: 1px solid gray;
+      height: 120px;
+      padding: 10px;
+    }
+
+    .veContent .img {
+      background-color: blue;
+      width: 250px;
+      height: 400px;
+      margin: 20px auto;
+    }
+
+    .veContent input[type="button"] {
+      margin: 30px auto;
+      display: block;
+      height: 50px;
+      background-color: #8a35ba;
+      width: 100%;
+      font-size: 20px;
+      color: white;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="veMenu">
+    <ul>
+      <li><input type="button" value="비건다짐이란?" onclick="navclick(goVe.html)"></li>
+      <li><input type="button" value="다짐하기" onclick="navClick('doVe.html')"></li>
+      <li><input type="button" value="다짐자랑하기" onclick="navClick('shareVe.html')"></li>
+      <li><input type="button" value="다른다짐보기" onclick="navClick('showVe.html')"></li>
+    </ul>
+  </div>
+  <div class="veContent">
+    <div>
+      <ul>
+        <li style="margin-right: 170px; margin-bottom:30px"> 비건다짐이란? </li>
+        <li>
+          <div>
+
+            비건다짐에 대한 설명이 들어가는 자리
+          </div>
+        </li>
+      </ul>
+
+      <div class="img">
+        예시 이미지 자리
+      </div>
+
+      <input type="button" onclick="navClick('doVe.html')" value="다짐하러가기">
+    </div>
+  </div>
+
+</body>
+<script>
+  function navClick(loadUrl) {
+    $(".content").load(loadUrl);
+  }
+</script>
+
+</html>

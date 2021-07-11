@@ -73,7 +73,7 @@
         다아아아악의 소감
       </div>
       <div style="width: 80%; display: inline-block;">
-        <a href="write_comment.html" style="position: absolute; text-decoration: none; right: 300px; top:390px; color:black;">글쓰기</a>
+        <a href="javascript:write_comment();"style="position: absolute; text-decoration: none; right: 300px; top:390px; color:black;">글쓰기</a>
         <p style="width: 75%; margin-left: 80px; text-align: left; margin-top: 10px; position: relative;">작성자명</p>
       </div>
       <table>
@@ -103,4 +103,9 @@
       </table>
     </div>
 </body>
+<script>
+  function write_comment(){
+    window.open("writeComment.html", "wirte_comm", "width=800, height=1200, left=100, top=50");
+  }
+</script>
 </html>

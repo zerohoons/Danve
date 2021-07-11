@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #deco {
+    background: white;
+    border: 1px solid #8a35ba;
+  }
+
+  .howto>li {
+    color: #8a35ba;
+  }
+
+  .menubar {
+    border-top: white;
+    color: gray;
+  }
+
+  .menubar {
+    margin-bottom: 0%;
+    height: 10px;
+  }
+
+  #goVe {
+    background-color: none;
+    color: #8a35ba;
+  }
+
+  #goVe:hover {
+    color: #8a35ba;
+    font-weight: bold;
+  }
+
+
+  .veMenu {
+    margin: 0% auto;
+    align-items: center;
+    display: block;
+    margin-left: 80px;
+  }
+
+  .veMenu ul {
+    margin: 0%;
+    width: 400px;
+    padding: 0%;
+    text-align: center;
+
+  }
+
+  .veMenu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0%;
+    margin: 0%;
+    border: 2px solid #8a35ba;
+    border-top: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+  }
+
+  .veMenu ul li input[type="button"] {
+    background-color: white;
+    border: 0px;
+    font-size: 15px;
+    margin: 0%;
+  }
+
+  .veMenu ul li input[type="button"]:hover {
+    color: #8a35ba;
+    background: white;
+  }
+
+  .doVe {
+    border: 1px dotted #8a35ba;
+    margin: 15px auto;
+    width: 450px;
+    height: 500px;
+  }
+
+  .doVe form textarea {
+    width: 363px;
+    height: 263px;
+  }
+
+  #doVe_btn {
+    margin: 10px auto;
+    display: block;
+    background: #8a35ba;
+    color: white;
+    height: 30px;
+    width: 400px;
+    font-size: 15px;
+  }
+</style>
+
+<body>
+  <div class="veMenu">
+    <ul>
+      <li><input type="button" value="비건다짐이란?" onclick="navclick(goVe.html)"></li>
+      <li><input type="button" value="다짐하기" onclick="navClick('doVe.html')"></li>
+      <li><input type="button" value="다짐자랑하기" onclick="navClick('shareVe.html')"></li>
+      <li><input type="button" value="다른다짐보기" onclick="navClick('showVe.html')"></li>
+    </ul>
+  </div>
+
+  <div class="doVe">
+    <h1>다짐하기</h1>
+    <h3>다짐하기 설명</h3>
+    <form action="">
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <p>다짐하기는 작성한 뒤에 수정 및 삭제가 불가능합니다.</p>
+      <input type="button" value="다짐하기" id="doVe_btn">
+    </form>
+  </div>
+</body>
+<script>
+  function navClick(loadUrl) {
+    $(".content").load(loadUrl);
+  }
+</script>
+
+</html>
